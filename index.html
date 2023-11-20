@@ -9,16 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
       <nav>
-        <img
+        <img class="logo"
           src="images/logo.png"
           alt="Ascent Physiotherapy Logo"
           width="100"
         />
-        <ul>
+        <ul id="nav-items">
           <li><a href="index.html">Home</a></li>
           <li><a href="">Book Now</a></li>
           <li><a href="">Products &amp Services</a></li>
@@ -26,15 +29,15 @@
           <li><a href="">Fees</a></li>
           <li><a href="">Resources</a></li>
         </ul>
+         <!--Hamburger menu for small screens for nav -->
+         <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
       </nav>
     </header>
-    <section>
-      <img
-        src="images/mountain.jpg"
-        alt="Woman summits mountain"
-        width="1200"
-      />
-      <h1>Welcome to Ascent Physiotherapy</h1>
+    <section class="hero">
+        <div class="wrapper">
+      <h1>Ascent Physiotherapy</h1>
+      <a class="button" href="https://ascentphysiotherapy.janeapp.com/">Book now</a>
+        </div>
     </section>
     <section>
       <h2>About Us</h2>
@@ -116,5 +119,12 @@
       </ul>
       <span>&copy Kendra Mulligan Physical Therapist Corp 2010</span>
     </footer>
+      <!--To show nav items when hamburger menu clicked-->
+      <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
   </body>
 </html>
