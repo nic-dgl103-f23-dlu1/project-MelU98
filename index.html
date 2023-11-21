@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Ascent Physiotherapy</title>
+    <title> Ascent Physiotherapy</title>
     <!--Link to Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,11 +106,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
       <a class="button" href="https://ascentphysiotherapy.janeapp.com/">Book an Appointment</a>
     </section>
     <footer>
+        <div class="wrapper-width">
+            <!--Insert Google map here-->
       <address>
         141A Nordin Street<br />
         Comox, BC, Canada<br />
         V9M 3N5
       </address>
+      <div class="hours">
       <h3>Hours</h3>
       <ul>
         <li>Monday to Thursday</li>
@@ -118,7 +121,44 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
         <li>Friday</li>
         <li>8 AM - 3 PM</li>
       </ul>
+    </div>
+    </div>
+    <div class="wrapper-form">
+        <h2>Contact Form</h2>
+        <form method="post" action=""></form>
+        <label for="fname">First Name </label>
+        <input type="text" id="fname" name="firstname" placeholder="Ex: John">
+
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Ex: Doe">
+
+<label for="email">Email <span class="label-required">* (required)</span></label>
+<input type="email" id="email" name="email" placeholder="Ex: john.doe@gmail.com" required>
+
+<label for="number">Phone Number <span class="label-required">* (required)</span></label>
+<input type="tel" id="number" name="phone-number" placeholder="(123)456-7890" required>
+
+<fieldset>
+    <legend>Choose your preferred method of contact</legend>
+    <input type="radio" id="emailed" name="emailed" value="Email">
+    <label for="emailed">Email  </label><br>
+    <input type="radio" id="phone" name="phone" value="Phone">
+    <label for="phone">Phone</label>
+</fieldset>
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="Please enter your message here" style="height:200px"></textarea>
+
+<div class="wrapper-button">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+</div>
+</div>
+
+      <div class="copyright">
       <span>&copy Kendra Mulligan Physical Therapist Corp 2010</span>
+      <p>“This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.”</p>
+    </div>
+
     </footer>
       <!--To show nav items when hamburger menu clicked-->
       <script>
