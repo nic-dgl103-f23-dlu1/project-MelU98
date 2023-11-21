@@ -6,6 +6,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   body {
     font-size: 1.6rem;
@@ -59,6 +60,9 @@ html {
     color: black;
     text-transform: uppercase;
   }
+  img {
+    max-width: 100%;
+  }
   /* == NAV STYLING == */
   header {
     margin-top: 20px;
@@ -99,3 +103,28 @@ header img {
    padding: 150px 0;
  }
   
+ /* == ABOUT STYLING == */
+.about-container {
+    background-color: #e3f3f8;
+}
+ .about {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+ }
+  .about p {
+    text-align: initial;
+  }
+.about h2 {
+    margin-bottom: 20px;
+}
+
+/* == TESTIMONIAL STYLING == */
+.testimonials {
+    width: 100%;
+    padding: 50px;
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+}
