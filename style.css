@@ -1,285 +1,314 @@
-/* == Global Styles == */
+/* STYLES ----------------------------------
+1. Global Styles 
+2. Typography (headings, paragraphs, lists, buttons)
+3. Nav Styles
+4. Hero Styles
+5. About Us Styles
+6. Testimonial Styles
+7. Our Space Styles
+8. CTA Styles
+9. Footer Styles
+10.Form Button
+11. Form Structure
+12. Form Controls
+----------------------------------------------
+/* =========== 
+1. GLOBAL STYLES 
+============ */
 html {
-    font-size: 62.5%;
-    width: 100;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  body {
-    font-size: 1.8rem;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: center;
-    margin: 0;
-    background-color: #ffffff;
-  }
-
-  .button {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #f18e15;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    border-radius: 8px; 
-  }
+  font-size: 62.5%;
+  width: 100;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.8rem;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  text-align: center;
+}
 .wrapper-width {
-    max-width: 87%;
-    margin: 0 auto;
-    padding: 50px 0;
+  max-width: 87%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* =========== 
+2. TYPOGRAPHY 
+============ */
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 4rem;
+  color: #f6fafa;
+  margin-bottom: 20px;
 }
 
-  /* == Typography == */
-  h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
-    color: #f6fafa;
-    margin-bottom: 20px;
-  }
+h2 {
+  font-size: 2.8rem;
+  color: #011a30;
+}
+h3 {
+  font-size: 2rem;
+  color: #011a30;
+}
+p {
+  color: #3f3f3f;
+  line-height: 1.5;
+}
+li a {
+  color: #011a30;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.8rem;
-    color: #011a30;
-  }
-  h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: #3F3F3F;
-  }
-  p {
-    color: #3F3F3F;
-    line-height: 1.5;
-  }
-  li a {
-    text-decoration: none;
-    color: #011a30;
-    text-transform: uppercase;
-  }
-  img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
+.button {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #f18e15;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
 
-  /* == NAV STYLING == */
-  header {
-    margin-top: 20px;
-display: flex;
-flex-direction: column;
-  }
+/* =========== 
+3. NAV STYLES 
+============ */
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
 header img {
-    margin-left: 10px;
-    margin-bottom: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-  nav ul {
-    flex-direction: column;
-    display: none;
-    margin-top: 20px;
-    list-style-type: none;
-  }
-  .show-items {
-    display: flex;
-  }
-  nav .toggle {
-    align-self: flex-end;
-    position: absolute;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-right: 20px;
-  }
-
-  /* == HERO STYLING == */
- .hero {
-    background-color: #BFE5F0;
-    background-image: url(images/mountains.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-position: center;
-    padding: 150px 0;
- }
-  
- /* == ABOUT STYLING == */
- .about {
-    background-color: #e3f3f8;
- }
-  .about p {
-    text-align: initial;
-  }
-.about h2 {
-    margin-bottom: 40px;
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  flex-direction: column;
+  display: none;
+  margin-top: 20px;
+  list-style-type: none;
+}
+.show-items {
+  display: flex;
+}
+nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+/* =========== 
+4. HERO STYLES
+============ */
+.hero {
+  background-color: #bfe5f0;
+  background-image: url(images/mountains.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+/* =========== 
+5. ABOUT US STYLES 
+============ */
+.about {
+  background-color: #e3f3f8;
 }
 .about img {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
-/* == TESTIMONIAL STYLING == */
+/* =========== 
+6. TESTIMONIAL STYLES 
+============ */
 .testimonials h2 {
-    margin-bottom: 40px;
+  text-transform: capitalize;
 }
-.testimonials {
-    background-color: #ffffff;
-}
-
 .contents {
-    background-color: #e3f3f8;
-    margin: 30px;
-    border-radius: 10px;
-    padding: 20px;
+  background-color: #e3f3f8;
+  margin: 30px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+
+  /* == box shadow from  https://getcssscan.com/css-box-shadow-examples #85== */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 span {
-    font-size:1.5rem;
-    color: #3F3F3F;
-    font-weight: 300;
+  font-size: 1.5rem;
+  color: #3f3f3f;
+  font-weight: 300;
 }
-
-/* === OUR SPACE STYLING == */
+/* =========== 
+7. OUR SPACE STYLES 
+============ */
 .our-space {
-    background-color: #e3f3f8;
-}
-.our-space h2 {
-    margin-bottom: 40px;
+  background-color: #e3f3f8;
 }
 .our-space p {
-    margin-top: 30px;
-    text-align: initial;
+  margin-top: 30px;
 }
 .our-space ul {
-    color:#3F3F3F;
-    text-align: initial;
-    list-style-position: inside;
+  color: #3f3f3f;
+  list-style-position: inside;
 }
 .our-space ul li {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
-
-/* == CTA STYLING == */
+/* =========== 
+8. CTA STYLES 
+============ */
 .cta {
-    background-color: #ffffff;
-    padding: 50px;
+  text-align: center;
+  padding: 50px;
 }
 
 .cta h2 {
-    border: 2px solid #011a30;
-    margin-bottom: 20px;
+  text-transform: uppercase;
+  border: 2px solid #011a30;
 }
 .cta p {
-    padding-bottom: 35px;
-} 
+  padding-bottom: 35px;
+}
 
-/* =FOOTER STYLING == */
+/* =========== 
+9. FOOTER STYLES 
+============ */
 footer {
-    background-color: #e3f3f8;
-    color: #3F3F3F;
+  background-color: #e3f3f8;
+  color: #3f3f3f;
 }
-.copyright {
-    background-color: #ffffff;
-    font-size: 1rem;
-    padding:20px
-}
-address {
-    color: #3F3F3F;
+footer h3 {
+  margin-bottom: 10px;
 }
 footer ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+.info {
+  text-align: center;
+  padding: 10px;
+}
+.copyright {
+    background-color: #fff;
+  font-size: 1rem;
+  padding: 20px;
 }
 
-.hours {
-    padding: 10px;
-}
-
-
-/* == FORM BUTTONS -- */
+/* =========== 
+10. FORM BUTTON 
+============ */
 
 input[type="reset"] {
-    background-color: #ffffff;
-   color:#f18e15;
-   font-size: 1.2rem;
-    padding: 10px 20px;
-    border: 1px solid #f18e15;
-    border-radius: 8px; 
-    cursor: pointer;
+  background-color: #ffffff;
+  color: #f18e15;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 1px solid #f18e15;
+  border-radius: 8px;
+  cursor: pointer;
 }
 input[type="reset"]:hover {
-    background-color: #f7d1a2;
+  background-color: #f7d1a2;
 }
 
-input[type="submit"]{
-    background-color: #f18e15;
-    color: #ffffff;
-    font-size: 1.2rem;
-    border: 1px solid #ffffff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+input[type="submit"] {
+  background-color: #f18e15;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #f3b871;
+  background-color: #f3b871;
 }
 
-/* == FORM STRUCTURE == */
+/* =========== 
+11. FORM STRUCTURE 
+============ */
 .wrapper-form {
-    background-color:#ffffff;
-    border-radius: 8px;
-    max-width: 80%;
-    margin: 0 auto 30px;
-    padding: 20px;
-    text-align: initial;
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 80%;
+  margin: 0 auto 30px;
+  padding: 20px;
 }
 .wrapper-button {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* == FORM CONTROLS == */
+/* =========== 
+12. FORM CONTROLS
+============ */
 
-input, select, textarea {
-    font-size: 1.6rem;
+input,
+select,
+textarea {
+  font-size: 1.6rem;
 }
-input[type="text"], textarea {
-width: 100%;
-border: 1px solid #011a30;
-border-radius: 8px;
-padding: 10px;
-margin-top: 10px;
-margin-bottom: 10px;
-resize: vertical;
+input[type="text"],
+textarea {
+  width: 100%;
+  border: 1px solid #011a30;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
 }
 
 input[type="email"] {
-    width: 100%;
-    border: 1px solid #011a30;
-    border-radius: 8px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    resize: vertical;
-    }
+  width: 100%;
+  border: 1px solid #011a30;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
 
 input[type="tel"] {
-    width: 100%;
-    border: 1px solid #011a30;
-    border-radius: 8px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    resize: vertical;
-    }
- 
-fieldset {
-    margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #011a30;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
 }
-    fieldset, textarea {
-        border: 1px solid #011a30;
-        border-radius: 8px;
-    }
 
-   
+fieldset {
+  margin-bottom: 10px;
+}
+fieldset,
+textarea {
+  border: 1px solid #011a30;
+  border-radius: 8px;
+}
