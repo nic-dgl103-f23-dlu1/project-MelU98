@@ -22,7 +22,7 @@ html {
     text-transform: uppercase;
     background-color: #f18e15;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 10px 20px;
     border-radius: 8px; 
   }
@@ -52,6 +52,7 @@ html {
   }
   p {
     color: #3F3F3F;
+    line-height: 1.5;
   }
   li a {
     text-decoration: none;
@@ -60,6 +61,7 @@ html {
   }
   img {
     max-width: 100%;
+    border-radius: 8px;
   }
 
   /* == NAV STYLING == */
@@ -113,10 +115,16 @@ header img {
 .about h2 {
     margin-bottom: 40px;
 }
+.about img {
+    margin-bottom: 20px;
+}
 
 /* == TESTIMONIAL STYLING == */
 .testimonials h2 {
     margin-bottom: 40px;
+}
+.testimonials {
+    background-color: #ffffff;
 }
 
 .contents {
@@ -131,20 +139,9 @@ span {
     font-weight: 300;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* === OUR SPACE STYLING == */
 .our-space {
-    background-color:#e3f3f8;
+    background-color: #e3f3f8;
 }
 .our-space h2 {
     margin-bottom: 40px;
@@ -156,14 +153,16 @@ span {
 .our-space ul {
     color:#3F3F3F;
     text-align: initial;
+    list-style-position: inside;
 }
-.our-space img {
-    border-radius: 8px;
+.our-space ul li {
+    padding: 10px 0;
 }
+
 
 /* == CTA STYLING == */
 .cta {
-   
+    background-color: #ffffff;
     padding: 50px;
 }
 
@@ -228,7 +227,7 @@ input[type="submit"]:hover {
 
 /* == FORM STRUCTURE == */
 .wrapper-form {
-    background-color: #ffffff;
+    background-color:#ffffff;
     border-radius: 8px;
     max-width: 80%;
     margin: 0 auto 30px;
