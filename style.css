@@ -65,12 +65,12 @@ h3 {
   font-size: 2rem;
   color: #011a30;
 }
-p {
+p, blockquote {
   color: #3f3f3f;
   line-height: 1.5;
 }
 li a {
-  color: #011a30;
+  color: #3f3f3f;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -101,12 +101,15 @@ header img {
 nav {
   display: flex;
   flex-direction: column;
+  
 }
 nav ul {
   flex-direction: column;
   display: none;
   margin-top: 20px;
+  margin-bottom: 20px;
   list-style-type: none;
+
 }
 .show-items {
   display: flex;
@@ -145,7 +148,7 @@ nav .toggle {
 .testimonials h2 {
   text-transform: capitalize;
 }
-.contents {
+blockquote {
   background-color: #e3f3f8;
   margin: 30px;
   border-radius: 8px;
@@ -158,6 +161,8 @@ nav .toggle {
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 span {
+    margin-top: 10px;
+    display: block;
   font-size: 1.5rem;
   color: #3f3f3f;
   font-weight: 300;
@@ -212,8 +217,20 @@ footer ul {
   text-align: center;
   padding: 10px;
 }
+.footer-nav img{
+    margin-top: 30px;
+}
+.footer-nav ul{
+    font-size: 1.5rem;
+    display: initial;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
 .copyright {
-    background-color: #fff;
+    background-color: #ffffff;
   font-size: 1rem;
   padding: 20px;
 }
