@@ -7,12 +7,13 @@
 6. Testimonial Styles
 7. Our Space Styles
 8. Our Team Styles
-9. CTA Styles
-10. Footer Styles
-11.Form Button
-12. Form Structure
-13. Form Controls
-14. Media Query Changes 1200px +
+9. Our Services Styles
+10. CTA Styles
+11. Footer Styles
+12.Form Button
+13. Form Structure
+14. Form Controls
+15. Media Query Changes 1200px +
 ----------------------------------------------
 /* =========== 
 1. GLOBAL STYLES 
@@ -28,14 +29,14 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   margin: 0;
   background-color: #ffffff;
+  text-align: center;
 }
 img {
   max-width: 100%;
   border-radius: 5px;
-  text-align: center;
 }
 .wrapper-width {
   max-width: 87%;
@@ -79,8 +80,8 @@ li a {
 }
 
 .button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   color: #fff;
   background-color: #f18e15;
@@ -96,7 +97,6 @@ li a {
 header {
   display: flex;
   flex-direction: column;
-  text-align: center;
   margin-top: 20px;
 }
 header img {
@@ -127,30 +127,28 @@ nav .toggle {
 /* =========== 
 4. HERO STYLES
 ============ */
-.hero, .team-hero {
+.hero,
+.team-hero {
   background-color: #a9deed;
   background-image: url(images/mountains.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center;
   padding: 150px 0;
-  text-align: center;
 }
 
 .hero {
-    background-image: url(images/mountains.jpg);  
-    
+  background-image: url(images/mountains.jpg);
 }
 
 .team-hero {
-    background-image: url(images/blue-mountain.jpg);
-  
+  background-image: url(images/blue-mountain.jpg);
 }
 /* =========== 
 5. ABOUT US STYLES 
 ============ */
 .about {
-  background-color: #e3f3f8;
+  background-color: #f2fafc;
 }
 .about img {
   margin-bottom: 20px;
@@ -162,11 +160,10 @@ nav .toggle {
   text-transform: capitalize;
 }
 blockquote {
-  background-color: #e3f3f8;
+  background-color: #f2fafc;
   margin: 30px;
   border-radius: 8px;
   padding: 20px;
-  text-align: center;
 
   /* == box shadow from  https://getcssscan.com/css-box-shadow-examples #85== */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
@@ -184,7 +181,7 @@ span {
 7. OUR SPACE STYLES 
 ============ */
 .our-space {
-  background-color: #e3f3f8;
+  background-color: #f2fafc;
 }
 .our-space p {
   margin-top: 30px;
@@ -201,22 +198,36 @@ span {
 8. OUR TEAM STYLES
 ============ */
 .name {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 .hiring {
-    background-color: #e3f3f8;
+  background-color: #f2fafc;
 }
 .bio {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 /* =========== 
-9. CTA STYLES 
+9. OUR SERVICES STYLES
+============ */
+.our-services {
+  background-color: #f2fafc;
+}
+.our-services p {
+  padding-bottom: 30px;
+}
+.expect img {
+    margin-bottom: 30px;
+}
+.products {
+    background-color: #f2fafc;
+}
+/* =========== 
+10. CTA STYLES 
 ============ */
 .cta {
-  text-align: center;
   padding: 50px;
 }
 
@@ -228,10 +239,10 @@ span {
 }
 
 /* =========== 
-10. FOOTER STYLES 
+11. FOOTER STYLES 
 ============ */
 footer {
-  background-color: #e3f3f8;
+  background-color: #f2fafc;
   color: #3f3f3f;
   margin-bottom: 0;
 }
@@ -243,7 +254,6 @@ footer ul {
 }
 
 .info {
-  text-align: center;
   padding: 10px;
 }
 .footer-nav img {
@@ -252,7 +262,6 @@ footer ul {
 .footer-nav ul {
   font-size: 1.5rem;
   display: initial;
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 0;
 }
@@ -264,7 +273,7 @@ footer ul {
 }
 
 /* =========== 
-11. FORM BUTTON 
+12. FORM BUTTON 
 ============ */
 
 input[type="reset"] {
@@ -295,7 +304,7 @@ input[type="submit"]:hover {
 }
 
 /* =========== 
-12. FORM STRUCTURE 
+13. FORM STRUCTURE 
 ============ */
 .wrapper-form {
   background-color: #ffffff;
@@ -303,6 +312,7 @@ input[type="submit"]:hover {
   max-width: 80%;
   margin: 0 auto 30px;
   padding: 20px;
+  text-align: left;
 }
 .wrapper-button {
   display: flex;
@@ -310,13 +320,14 @@ input[type="submit"]:hover {
 }
 
 /* =========== 
-13. FORM CONTROLS
+14. FORM CONTROLS
 ============ */
 
 input,
 select,
 textarea {
   font-size: 1.6rem;
+  
 }
 input[type="text"],
 textarea {
@@ -358,7 +369,8 @@ textarea {
   border-radius: 8px;
 }
 
-/* 14. Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* 15. Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .wrapper-width {
     max-width: 1170px;
@@ -429,9 +441,6 @@ textarea {
   .our-space-content p,
   .our-space-content li {
     color: #e3f3f8;
-  }
-  .copyright {
-    text-align: center;
   }
   .footer-info {
     display: flex;
