@@ -124,14 +124,24 @@ nav .toggle {
 /* =========== 
 4. HERO STYLES
 ============ */
-.hero {
-  background-color: #bfe5f0;
+.hero, .team-hero {
+  background-color: #a9deed;
   background-image: url(images/mountains.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center;
   padding: 150px 0;
   text-align: center;
+}
+
+.hero {
+    background-image: url(images/mountains.jpg);  
+    
+}
+
+.team-hero {
+    background-image: url(images/blue-mountain.jpg);
+  
 }
 /* =========== 
 5. ABOUT US STYLES 
