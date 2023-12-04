@@ -54,23 +54,26 @@
       <section class="services-hero">
         <h1>What We Offer</h1>
         <a class="button" href="https://ascentphysiotherapy.janeapp.com/"
-        >Book now</a
-      >
+          >Book now</a
+        >
       </section>
       <section class="our-services">
         <div class="wrapper-width">
           <!--All p elements in this section written by Chat GPT-->
           <h2>Services</h2>
-          <img src="images/personal-training.jpg" alt="a personal trainer helps a woman as she works out" width="500">
+          <div class="flex-container wrap">
+          <div class="service">
           <h3>Physiotherapy</h3>
           <p>
-            Physiotherapy (also known as Physical Therapy) is a healthcare
+            Physiotherapy is a
             profession dedicated to improving physical function and mobility
-            through evidence-based techniques like exercises and manual therapy.
+            through techniques like exercises and manual therapy.
             Whether recovering from injury or managing chronic conditions,
-            physiotherapists work to alleviate pain and enhance overall
+            physiotherapists work to alleviate pain and enhance
             well-being.
           </p>
+        </div>
+        <div class="service">
           <h3>Intramuscular Stimulation</h3>
           <p>
             Intramuscular Stimulation (IMS) is a targeted therapy using fine
@@ -79,15 +82,15 @@
             personalized treatment plans to enhance muscle function and address
             chronic pain effectively.
           </p>
+        </div>
+        <div class="service">
           <h3>Acupuncture</h3>
           <p>
-            Elevate your well-being with acupuncture at Ascent. Our skilled
-            physiotherapists seamlessly integrate this ancient practice into our
-            modern care approach. Experience the gentle, healing touch of
-            acupuncture needles tailored to address pain, stress, and overall
-            wellness. Discover balance and harmony at Ascent, where traditional
-            wisdom meets personalized care for a holistic healing experience.
+            Acupuncture involves inserting thin needles at specific body points to restore balance and promote natural healing. Widely used for pain management and overall well-being, it is considered safe when administered by licensed practitioners.
+         
           </p>
+        </div>
+        <div class="service">
           <h3>Radial Shockwave Therapy</h3>
           <p>
             Experience healing innovation with Radial Shockwave Therapy. Our
@@ -96,32 +99,36 @@
             our non-invasive approach brings advanced technology to your healing
             journey.
           </p>
+        </div>
+        <div class="service">
           <h3>Personal Training</h3>
           <p>
             Achieve your fitness goals with personalized trainingt. Our expert
             trainers offer tailored workouts and motivation to suit your unique
             needs. Whether you're a beginner or aiming to push your limits, our
             one-on-one sessions guide you toward a stronger, healthier you.
-            Start your fitness journey with us today!
+           
           </p>
+        </div>
+        <div class="service">
           <h3>Treatment for TMJ Dysfunction</h3>
           <p>
-            Experience relief from TMJ discomfort at [Your Clinic Name]. Our
-            personalized treatment includes gentle exercises, manual techniques,
-            and custom oral appliances if necessary. Whether it's jaw pain,
-            headaches, or restricted movement, we address the root cause for
-            effective relief. Start your journey to a pain-free smile with us.
+            Experience relief from TMJ discomfort. Our
+            personalized treatment includes gentle exercises, manual techniques,and custom oral appliances if necessary. Whether it's jaw pain,
+            headaches, or restricted movement, we address the root cause for effective relief.
           </p>
+        </div>
+        <div class="service">
           <h3>Myofascial Release and Craniosacral Therapy</h3>
           <p>
             Myofascial Release (MFR) and Craniosacral Therapy are gentle manual
             techniques addressing musculoskeletal issues and promoting
             well-being. MFR targets fascia for improved mobility, while
             Craniosacral Therapy optimizes cerebrospinal fluid flow, supporting
-            the central nervous system. Both therapies, performed by trained
-            practitioners, offer holistic approaches to alleviate conditions
-            like chronic pain and stress.
+            the central nervous system. 
           </p>
+        </div>
+        <div class="service">
           <h3>Sports Therapy</h3>
           <p>
             Sports therapy is a specialized field of healthcare focused on
@@ -131,16 +138,19 @@
             interventions and injury prevention strategies.
           </p>
         </div>
+        </div>
+      </div>
       </section>
       <section class="expect">
         <div class="wrapper-width">
           <h2>What To Expect</h2>
-          <img
+          <div class="grid">
+          <img class="expect-image"
             src="images/movement-assessmenr.jpg"
             alt="A woman holding a red foam tube for a movement assessment"
             width="600"
           />
-          <p>
+          <p class="expect-content">
             At a physiotherapy appointment, expect a thorough assessment of your
             medical history and current symptoms. The physiotherapist will
             conduct a physical examination to diagnose the source of any issues.
@@ -150,10 +160,12 @@
             to monitor your progress and adjust the plan as needed.
           </p>
         </div>
+      </div>
       </section>
       <section class="rates">
         <div class="wrapper-width">
           <h2>Rates</h2>
+          <div class="rates-tables">
           <table>
             <caption>
               Physiotherapy Services
@@ -219,22 +231,23 @@
                 <td>$125.00</td>
               </tr>
               <tr>
-                <td>5 Sessions (includes optional Physiotherapy evaluation)</td>
+                <td>5 Sessions</td>
                 <td>$175.00</td>
               </tr>
               <tr>
                 <td>
-                  10 Sessions (includes optional Physiotherapy evaluation)
+                  10 Sessions
                 </td>
                 <td>$299.00</td>
               </tr>
               <tr>
-                <td>Monthly (includes optional Physiotherapy evaluation)</td>
+                <td>Monthly</td>
                 <td>$445.00</td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
       </section>
       <section class="cta">
         <div class="wrapper-width">
@@ -306,9 +319,17 @@
             <input type="submit" value="Submit" />
           </div>
         </div>
-        <!--Insert Google map here-->
 
         <div class="footer-info">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.0241335955216!2d-124.92749082348837!3d49.67268407145411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881315b1258325%3A0xf21aee3501fe1122!2sAscent%20Physiotherapy!5e0!3m2!1sen!2sca!4v1701655047832!5m2!1sen!2sca"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
           <address class="info">
             <h3>Location</h3>
             141A Nordin Street<br />

@@ -93,9 +93,9 @@ li a {
 }
 
 caption {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 10px 0;
 }
 
 /* =========== 
@@ -135,8 +135,9 @@ nav .toggle {
 4. HERO STYLES
 ============ */
 .hero,
-.team-hero, .services-hero {
-    background-color: #a9deed;
+.team-hero,
+.services-hero {
+  background-color: #a9deed;
   background-image: url(images/mountains.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -153,7 +154,7 @@ nav .toggle {
 }
 
 .services-hero {
-    background-image: url(images/services-hero.jpg);
+  background-image: url(images/services-hero.jpg);
 }
 /* =========== 
 5. ABOUT US STYLES 
@@ -212,10 +213,9 @@ span {
 }
 .hiring {
   background-color: #f2fafc;
-  
 }
 .hiring img {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .bio {
   padding-bottom: 30px;
@@ -231,20 +231,20 @@ span {
   padding-bottom: 30px;
 }
 .expect img {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .rates {
-    background-color: #f2fafc;
+  background-color: #f2fafc;
 }
 table {
-    border-collapse: collapse;
-    margin: 0 auto 20px;
+  border-collapse: collapse;
+  margin: 0 auto 20px;
 }
-td, th {
-    border: 1px solid #011a30;
-    padding:10px; 
+td,
+th {
+  border: 1px solid #011a30;
+  padding: 10px;
 }
-
 
 /* =========== 
 10. CTA STYLES 
@@ -273,6 +273,9 @@ footer h3 {
 }
 footer ul {
   list-style-type: none;
+}
+iframe {
+  max-width: 100%;
 }
 
 .info {
@@ -349,7 +352,6 @@ input,
 select,
 textarea {
   font-size: 1.6rem;
-  
 }
 input[type="text"],
 textarea {
@@ -391,14 +393,12 @@ textarea {
   border-radius: 8px;
 }
 
-
 /* 15. Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .wrapper-width {
     max-width: 1170px;
     margin: auto;
   }
-
   nav {
     display: flex;
     flex-direction: row;
@@ -430,7 +430,7 @@ textarea {
   .about-content {
     display: flex;
     justify-content: space-around;
-    margin: 50px;
+    margin: 50px 0;
   }
   .about-content p {
     max-width: 40%;
@@ -464,8 +464,43 @@ textarea {
   .our-space-content li {
     color: #e3f3f8;
   }
+
+  .flex-container {
+    display: flex;
+    margin: 0 auto;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 40%;
+    margin: 0 auto;
+  }
+.expect-image {
+    width: 500px;
+    grid-column: 4 / 7;
+    grid-row: 4 / -3;
+}
+  .expect-content {
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+    background-color: #012f57;
+    padding: 70px;
+    border-radius: 8px;
+    align-self: center;
+    color: #e3f3f8;
+  }
+  .rates-tables {
+    display: flex;
+    justify-content: space-around;
+
+  }
   .footer-info {
     display: flex;
     justify-content: space-around;
+  }
+  .info {
+    margin-top: 100px;
   }
 }
