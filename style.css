@@ -37,6 +37,7 @@ body {
 img {
   max-width: 100%;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .wrapper-width {
   max-width: 87%;
@@ -57,7 +58,7 @@ h3 {
 h1 {
   font-size: 4rem;
   color: #f6fafa;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -89,6 +90,12 @@ li a {
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 8px;
+}
+
+caption {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px 0;
 }
 
 /* =========== 
@@ -128,8 +135,8 @@ nav .toggle {
 4. HERO STYLES
 ============ */
 .hero,
-.team-hero {
-  background-color: #a9deed;
+.team-hero, .services-hero {
+    background-color: #a9deed;
   background-image: url(images/mountains.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -144,14 +151,15 @@ nav .toggle {
 .team-hero {
   background-image: url(images/blue-mountain.jpg);
 }
+
+.services-hero {
+    background-image: url(images/services-hero.jpg);
+}
 /* =========== 
 5. ABOUT US STYLES 
 ============ */
 .about {
   background-color: #f2fafc;
-}
-.about img {
-  margin-bottom: 20px;
 }
 /* =========== 
 6. TESTIMONIAL STYLES 
@@ -204,6 +212,10 @@ span {
 }
 .hiring {
   background-color: #f2fafc;
+  
+}
+.hiring img {
+    margin-top: 20px;
 }
 .bio {
   padding-bottom: 30px;
@@ -221,9 +233,19 @@ span {
 .expect img {
     margin-bottom: 30px;
 }
-.products {
+.rates {
     background-color: #f2fafc;
 }
+table {
+    border-collapse: collapse;
+    margin: 0 auto 20px;
+}
+td, th {
+    border: 1px solid #011a30;
+    padding:10px; 
+}
+
+
 /* =========== 
 10. CTA STYLES 
 ============ */
