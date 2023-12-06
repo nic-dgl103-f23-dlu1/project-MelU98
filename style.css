@@ -61,7 +61,7 @@ li a {
   font-weight: 400;
   font-size: 1.5rem;
   color: #fff;
-  background-color: #f18e15;
+  background-color: #cc7205;
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -70,6 +70,7 @@ li a {
 }
 .button:hover {
   background-color: #f3b871;
+  color: #3f3f3f;
 }
 
 caption {
@@ -167,7 +168,6 @@ i {
 }
 .copyright {
   background-color: #ffffff;
-  font-size: 1rem;
   padding: 20px;
 }
 /* =========== 
@@ -227,6 +227,7 @@ input[type="reset"] {
 }
 input[type="reset"]:hover {
   background-color: #f7d1a2;
+  color: #3f3f3f;
 }
 
 input[type="submit"] {
@@ -242,6 +243,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #f3b871;
+  color: #3f3f3f;
 }
 
 /* --- Form Structure ---*/
@@ -322,7 +324,7 @@ textarea {
 .hero,
 .team-hero,
 .services-hero {
-  background-color: #a9deed;
+  background-color: #528896;
   background-image: url(images/mountains.jpg);
   background-size: cover;
   background-blend-mode: multiply;
