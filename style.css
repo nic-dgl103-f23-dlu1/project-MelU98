@@ -1,54 +1,27 @@
 /* STYLES ----------------------------------
-1. Global Styles 
-2. Typography (headings, paragraphs, lists, buttons)
-3. Nav Styles
-4. Hero Styles
-5. About Us Styles
-6. Testimonial Styles
-7. Our Space Styles
-8. Our Team Styles
-9. Our Services Styles
-10. CTA Styles
-11. Footer Styles
-12.Form Button
-13. Form Structure
-14. Form Controls
-15. Media Query Changes 1200px +
-----------------------------------------------
+1. Global Styles
+2. Typography
+3. Layout Structure
+4. Content Blocks
+5. General Classes
+6. Page Specific Styling
+7. Media Queries
+-------------------------------------------*/
 /* =========== 
 1. GLOBAL STYLES 
 ============ */
 html {
   font-size: 62.5%;
-  width: 100;
+  width: 100%;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-size: 1.6rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  margin: 0;
-  background-color: #ffffff;
-  text-align: center;
-}
-img {
-  max-width: 100%;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.wrapper-width {
-  max-width: 87%;
-  margin: 0 auto;
-  padding: 50px 0;
-}
 /* =========== 
 2. TYPOGRAPHY 
 ============ */
-
 h1,
 h2,
 h3 {
@@ -64,10 +37,12 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
-  color: #011a30;
 }
 h3 {
   font-size: 2rem;
+}
+h2,
+h3 {
   color: #011a30;
 }
 p,
@@ -91,6 +66,10 @@ li a {
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: #f3b871;
 }
 
 caption {
@@ -98,9 +77,13 @@ caption {
   font-weight: 600;
   padding: 10px 0;
 }
-
+img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
 /* =========== 
-3. NAV STYLES 
+3. LAYOUT STRUCTURE 
 ============ */
 header {
   display: flex;
@@ -118,9 +101,12 @@ nav {
 nav ul {
   flex-direction: column;
   display: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
   list-style-type: none;
+}
+
+nav li:hover {
+  text-decoration: underline;
 }
 .show-items {
   display: flex;
@@ -132,141 +118,14 @@ nav .toggle {
   margin-top: 10px;
   margin-right: 20px;
 }
-/* =========== 
-4. HERO STYLES
-============ */
-.hero,
-.team-hero,
-.services-hero {
-  background-color: #a9deed;
-  background-image: url(images/mountains.jpg);
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-position: center;
-  padding: 150px 0;
-}
-
-.hero {
-  background-image: url(images/mountains.jpg);
-}
-
-.team-hero {
-  background-image: url(images/blue-mountain.jpg);
-}
-
-.services-hero {
-  background-image: url(images/services-hero.jpg);
-}
-/* =========== 
-5. ABOUT US STYLES 
-============ */
-.about {
-  background-color: #f2fafc;
-}
-/* =========== 
-6. TESTIMONIAL STYLES 
-============ */
-.testimonials h2 {
-  text-transform: capitalize;
-}
-blockquote {
-  background-color: #f2fafc;
-  margin: 30px;
-  border-radius: 8px;
-  padding: 20px;
-
-  /* == box shadow from  https://getcssscan.com/css-box-shadow-examples #85== */
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-span {
-  margin-top: 10px;
-  display: block;
-  font-size: 1.5rem;
-  color: #3f3f3f;
-  font-weight: 300;
-}
-/* =========== 
-7. OUR SPACE STYLES 
-============ */
-.our-space {
-  background-color: #f2fafc;
-}
-.our-space p {
-  margin-top: 30px;
-}
-.our-space ul {
-  color: #3f3f3f;
-  list-style-position: inside;
-}
-.our-space ul li {
-  padding: 10px 0;
-}
-
-/* =========== 
-8. OUR TEAM STYLES
-============ */
-.team {
-    background-color: #f2fafc;
-}
-.name {
-  font-size: 1.8rem;
+body {
+  font-size: 1.6rem;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  padding-bottom: 10px;
+  margin: 0;
+  background-color: #ffffff;
+  text-align: center;
 }
-.hiring img {
-  margin-top: 20px;
-}
-.con-ed {
-    background-color: #f2fafc;
-}
-.bio {
-  padding-bottom: 30px;
-}
-
-/* =========== 
-9. OUR SERVICES STYLES
-============ */
-.our-services {
-  background-color: #f2fafc;
-}
-.our-services p {
-  padding-bottom: 30px;
-}
-.expect img {
-  margin-bottom: 30px;
-}
-.rates {
-  background-color: #f2fafc;
-}
-table {
-  border-collapse: collapse;
-  margin: 0 auto 20px;
-}
-td,
-th {
-  border: 1px solid #011a30;
-  padding: 10px;
-}
-
-/* =========== 
-10. CTA STYLES 
-============ */
-.cta {
-  padding: 50px;
-}
-
-.cta h2 {
-  text-transform: uppercase;
-}
-.cta p {
-  padding-bottom: 35px;
-}
-
-/* =========== 
-11. FOOTER STYLES 
-============ */
 footer {
   background-color: #f2fafc;
   color: #3f3f3f;
@@ -295,15 +154,66 @@ iframe {
   margin-bottom: 0;
 }
 
+.info a {
+  text-transform: initial;
+  transition: all 0.2s;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+i {
+  margin-right: 5px;
+}
 .copyright {
   background-color: #ffffff;
   font-size: 1rem;
   padding: 20px;
 }
-
 /* =========== 
-12. FORM BUTTON 
+4. CONTENT BLOCKS 
 ============ */
+/*--- Testimonial Blocks ---*/
+blockquote {
+  background-color: #f2fafc;
+  margin: 30px;
+  border-radius: 8px;
+  padding: 20px;
+
+  /* == box shadow from  https://getcssscan.com/css-box-shadow-examples #85== */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+span {
+  margin-top: 10px;
+  display: block;
+  font-size: 1.5rem;
+  color: #3f3f3f;
+  font-weight: 300;
+}
+/*--- Tables ---*/
+table {
+  border-collapse: collapse;
+  margin: 0 auto 20px;
+}
+td,
+th {
+  border: 1px solid #011a30;
+  padding: 10px;
+}
+/*--- Call to Action ---*/
+.cta {
+  padding: 50px;
+}
+
+.cta h2 {
+  text-transform: uppercase;
+}
+.cta p {
+  padding-bottom: 35px;
+}
+/* ---Form Button---*/
 
 input[type="reset"] {
   background-color: #ffffff;
@@ -313,6 +223,7 @@ input[type="reset"] {
   border: 1px solid #f18e15;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 input[type="reset"]:hover {
   background-color: #f7d1a2;
@@ -326,15 +237,14 @@ input[type="submit"] {
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 input[type="submit"]:hover {
   background-color: #f3b871;
 }
 
-/* =========== 
-13. FORM STRUCTURE 
-============ */
+/* --- Form Structure ---*/
 .wrapper-form {
   background-color: #ffffff;
   border-radius: 8px;
@@ -348,9 +258,7 @@ input[type="submit"]:hover {
   justify-content: space-between;
 }
 
-/* =========== 
-14. FORM CONTROLS
-============ */
+/* --- Form Controls --- */
 
 input,
 select,
@@ -396,8 +304,86 @@ textarea {
   border: 1px solid #011a30;
   border-radius: 8px;
 }
+/* =========== 
+5. GENERAL CLASSES
+============ */
+.wrapper-width {
+  max-width: 87%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.bg-colour {
+  background-color: #f2fafc;
+}
+/* =========== 
+6. PAGE SPECIFIC STYLING
+============ */
+/*--- Hero Styling ---*/
+.hero,
+.team-hero,
+.services-hero {
+  background-color: #a9deed;
+  background-image: url(images/mountains.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  padding: 150px 0;
+}
 
-/* 15. Extra large devices (large laptops and desktops, 1200px and up) */
+.hero {
+  background-image: url(images/mountains.jpg);
+}
+
+.team-hero {
+  background-image: url(images/blue-mountain.jpg);
+}
+
+.services-hero {
+  background-image: url(images/services-hero.jpg);
+}
+/*--- Index.html --- */
+.testimonials h2 {
+  text-transform: capitalize;
+}
+.our-space p {
+  margin-top: 30px;
+}
+.our-space ul {
+  color: #3f3f3f;
+  list-style-position: inside;
+}
+.our-space ul li {
+  padding: 10px 0;
+}
+/* --- team.html --- */
+.bio {
+  padding-bottom: 30px;
+}
+.name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.hiring img {
+  margin-top: 20px;
+}
+.hiring a {
+  color: #3f3f3f;
+}
+.hiring p {
+  font-size: 1.8rem;
+}
+
+/* --- services.html ---*/
+.our-services p,
+.expect img {
+  margin-bottom: 30px;
+}
+
+/* =========== 
+7. MEDIA QUERIES 
+============ */
+/*  Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .wrapper-width {
     max-width: 1170px;
@@ -406,13 +392,13 @@ textarea {
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 10px 30px;
+    gap: 300px;
+    max-width: 1170px;
+    margin: 0 auto;
   }
   nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 20px;
   }
 
@@ -464,7 +450,8 @@ textarea {
     border-radius: 8px;
     align-self: center;
   }
-  .grid-content, .grid-content p,
+  .grid-content,
+  .grid-content p,
   .grid-content li {
     color: #e3f3f8;
   }
@@ -486,23 +473,23 @@ textarea {
     display: flex;
     justify-content: space-around;
   }
-.bio-container {
+  .bio-container {
     display: flex;
     justify-content: space-between;
-}
-.bio {
+  }
+  .bio {
     text-align: left;
     padding-left: 30px;
-    }
-    .hiring {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-       margin: 0 auto;
-    }
-.hiring p {
+  }
+  .hiring {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hiring p {
     max-width: 45%;
-}
+  }
   .footer-info {
     display: flex;
     justify-content: space-around;
