@@ -1,0 +1,501 @@
+/* STYLES ----------------------------------
+1. Global Styles
+2. Typography
+3. Layout Structure
+4. Content Blocks
+5. General Classes
+6. Page Specific Styling
+7. Media Queries
+-------------------------------------------*/
+/* =========== 
+1. GLOBAL STYLES 
+============ */
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =========== 
+2. TYPOGRAPHY 
+============ */
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 4rem;
+  color: #f6fafa;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h2,
+h3 {
+  color: #011a30;
+}
+p,
+blockquote {
+  color: #3f3f3f;
+  line-height: 1.5;
+}
+li a {
+  color: #3f3f3f;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+    color: #012f57;
+  background-color: #f9951b;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: #f3b871;
+  color: #3f3f3f;
+}
+
+caption {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* =========== 
+3. LAYOUT STRUCTURE 
+============ */
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+header img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  flex-direction: column;
+  display: none;
+  margin: 20px auto;
+  list-style-type: none;
+}
+
+nav li:hover {
+  text-decoration: underline;
+}
+.show-items {
+  display: flex;
+}
+nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  margin: 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+footer {
+  background-color: #f2fafc;
+  color: #3f3f3f;
+  margin-bottom: 0;
+}
+footer h3 {
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style-type: none;
+}
+iframe {
+  max-width: 100%;
+}
+
+.info {
+  padding: 10px;
+}
+.footer-nav img {
+  margin-top: 30px;
+}
+.footer-nav ul {
+  font-size: 1.5rem;
+  display: initial;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.info a {
+  text-transform: initial;
+  transition: all 0.2s;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+i {
+  margin-right: 5px;
+}
+.copyright {
+  background-color: #ffffff;
+  padding: 20px;
+}
+/* =========== 
+4. CONTENT BLOCKS 
+============ */
+/*--- Testimonial Blocks ---*/
+blockquote {
+  background-color: #f2fafc;
+  margin: 30px;
+  border-radius: 8px;
+  padding: 20px;
+
+  /* == box shadow from  https://getcssscan.com/css-box-shadow-examples #85== */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+span {
+  margin-top: 10px;
+  display: block;
+  font-size: 1.5rem;
+  color: #3f3f3f;
+  font-weight: 300;
+}
+/*--- Tables ---*/
+table {
+  border-collapse: collapse;
+  margin: 0 auto 20px;
+}
+td,
+th {
+  border: 1px solid #011a30;
+  padding: 10px;
+}
+/*--- Call to Action ---*/
+.cta {
+  padding: 50px;
+}
+
+.cta h2 {
+  text-transform: uppercase;
+}
+.cta p {
+  padding-bottom: 35px;
+}
+/* ---Form Button---*/
+
+input[type="reset"] {
+  background-color: #ffffff;
+  color: #012f57;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 1px solid #012f57;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+input[type="reset"]:hover {
+  background-color: #f2fafc;
+
+}
+
+input[type="submit"] {
+  color: #012f57;
+  background-color: #f9951b;
+  font-size: 1.2rem;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #f3b871;
+}
+
+/* --- Form Structure ---*/
+.wrapper-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 80%;
+  margin: 0 auto 30px;
+  padding: 20px;
+  text-align: left;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --- Form Controls --- */
+
+input,
+select,
+textarea {
+  font-size: 1.6rem;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  border: 1px solid #011a30;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type="email"] {
+  width: 100%;
+  border: 1px solid #011a30;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type="tel"] {
+  width: 100%;
+  border: 1px solid #011a30;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+fieldset,
+textarea {
+  border: 1px solid #011a30;
+  border-radius: 8px;
+}
+/* =========== 
+5. GENERAL CLASSES
+============ */
+.wrapper-width {
+  max-width: 87%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.bg-colour {
+  background-color: #f2fafc;
+}
+/* =========== 
+6. PAGE SPECIFIC STYLING
+============ */
+/*--- Hero Styling ---*/
+.hero,
+.team-hero,
+.services-hero {
+  background-color: #528896;
+  background-image: url(images/mountains.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.hero {
+  background-image: url(images/mountains.jpg);
+}
+
+.team-hero {
+  background-image: url(images/blue-mountain.jpg);
+}
+
+.services-hero {
+  background-image: url(images/services-hero.jpg);
+}
+/*--- Index.html --- */
+.testimonials h2 {
+  text-transform: capitalize;
+}
+.our-space p {
+  margin-top: 30px;
+}
+.our-space ul {
+  color: #3f3f3f;
+  list-style-position: inside;
+}
+.our-space ul li {
+  padding: 10px 0;
+}
+/* --- team.html --- */
+.bio {
+  padding-bottom: 30px;
+}
+.name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.hiring img {
+  margin-top: 20px;
+}
+.hiring a {
+  color: #3f3f3f;
+}
+.hiring p {
+  font-size: 1.8rem;
+}
+
+/* --- services.html ---*/
+.our-services p,
+.expect img {
+  margin-bottom: 30px;
+}
+
+/* =========== 
+7. MEDIA QUERIES 
+============ */
+/*  Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .wrapper-width {
+    max-width: 1170px;
+    margin: auto;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 50px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+  }
+  .about-content p {
+    max-width: 40%;
+  }
+  .blockquote-wrapper {
+    display: flex;
+  }
+  blockquote {
+    flex-basis: 100%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .grid-image {
+    width: 500px;
+    grid-column: 4 / 7;
+    grid-row: 4 / -3;
+  }
+  .grid-content {
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+    background-color: #012f57;
+    padding: 70px;
+    border-radius: 8px;
+    align-self: center;
+  }
+  .grid-content,
+  .grid-content p,
+  .grid-content li {
+    color: #e3f3f8;
+  }
+
+  .flex-container {
+    display: flex;
+    margin: 0 auto;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .rates-tables {
+    display: flex;
+    justify-content: space-around;
+  }
+  .bio-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bio {
+    text-align: left;
+    padding-left: 30px;
+  }
+  .hiring {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hiring p {
+    max-width: 45%;
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .info {
+    margin-top: 100px;
+  }
+}
