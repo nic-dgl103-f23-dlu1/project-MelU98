@@ -60,8 +60,8 @@ li a {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  color: #fff;
-  background-color: #cc7205;
+    color: #012f57;
+  background-color: #f9951b;
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -217,22 +217,22 @@ th {
 
 input[type="reset"] {
   background-color: #ffffff;
-  color: #f18e15;
+  color: #012f57;
   font-size: 1.2rem;
   padding: 10px 20px;
-  border: 1px solid #f18e15;
+  border: 1px solid #012f57;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 input[type="reset"]:hover {
-  background-color: #f7d1a2;
-  color: #3f3f3f;
+  background-color: #f2fafc;
+
 }
 
 input[type="submit"] {
-  background-color: #f18e15;
-  color: #ffffff;
+  color: #012f57;
+  background-color: #f9951b;
   font-size: 1.2rem;
   border: 1px solid #ffffff;
   padding: 10px 20px;
@@ -243,7 +243,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #f3b871;
-  color: #3f3f3f;
 }
 
 /* --- Form Structure ---*/
